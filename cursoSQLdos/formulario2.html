@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+    
+</head>
+<body>
+    <div class="contenedor">
+        <form id="form1"  method="post" action="datosval.php">
+            <h2><em>Formulario de Registro</em></h2>
+            <label for="nombre"> Nombre <span><em>(requerido)</em></span></label>
+            <input type="text" id="nombre" name="nombre"  class="form-input" required>
+            
+            <label for="primer_apellido">Primer Apellido <span><em>(requerido)</em></span></label>
+            <input type="text" id="primer_apellido" name="primer_apellido" class="form-input" required>
+
+            <label for="segundo_apellido">Segundo Apellido <span><em>(requerido)</em></span></label>
+            <input type="text" id="segundo_apellido" name="segundo_apellido" class="form-input" required>
+            
+            <label for="email">Email <span><em>(requerido)</em></span></label>
+            <h6>Ha de tener un formato correcto</h6>
+            <input type="text" id="email" placeholder="micorreo@micorreo.com" name="email" class="form-input" required>
+
+            <label for="usuario">Usuario <span><em>(requerido)</em></span></label>
+            <h6>Debe tener entre 4 y 15 caracteres</h6>
+            <input type="text" id="usuario" placeholder="Entre 4 y 15 caracteres" name="usuario" class="form-input" required>
+            
+            <label for="contrasena">Contraseña</label>
+            <h6>Debe contener una mayuscula, una minuscula, un numero y entre 4 y 8 caracteres</h6>
+            <input type="password"  id="contrasena" placeholder="Incluir 1 mayuscula, 1 minuscula, 1 numero, entre 4 y 8 caracteres" name="contrasena" class="form-input" required><br><br>
+      
+            <input class="form-btn" id="submit" name="submit" type="submit" value="Subscribirse">
+    
+            
+        </form>
+
+    </div>
+    
+</body>
+</html>
